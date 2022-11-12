@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/body-bg.png");
+    font-family: cursive;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Global Styles */
+
+.secondary-headings {
+    -webkit-text-stroke: 2px black;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.global-padding {
+    padding-top: 110px;
+}
+
+.center-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+
+header {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-items {
+    text-align: center;
+    position: relative;
+}
+
+
+header img {
+    width: 30%;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-items h2 {
+    position: absolute;
+    right: -27px;
+    padding: 5px 5px 0 30px;
+    top: 6px;
+    background: #fff;
+    z-index: 1;
+    border-radius: 10%;
+    border: 2px solid black;
+    color: #fff;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.twitter h2 {
+    top: 10px;
+    right: -30px;
+}
+
+.medium h2 {
+    right: -34px;
+}
+
+/* Header Styling End */
+
+/* Hero Section Styling */
+
+.hero {
+    text-align: center;
+}
+
+.hero-img {
+    width: 90%;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: #D81F4E;
+    -webkit-text-stroke: 4px black;
+}
+
+.hero-span {
+    display: block;
+    color: #67DFE3;
+    margin-top: -40px;
+}
+
+.content-section {
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 110px 30px 0 30px;
+}
+
+.layer-img {
+    width: 40%;
+}
+
+.layer-text {
+    width: 50%;
+}
+
+
+.layer-img img {
+    width: 100%;
+}
+
+.layer-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.layer-text h2 {
+    margin-bottom: 10px;
+}
+
+.blue-brush {
+    background-image: url("../images/blue-brush.png");
+    background-size: cover;
+}
+
+/* Hero Section End */
+
+
+/* Projects Section Styling */
+.projects h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.7rem;
+}
+
+.credits {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.credits-card {
+    position: relative;
+    width: 21%;
+
+}
+
+.credits-card img {
+    width: 100%;
+    border: 2px solid #030709;
+    border-radius: 10%;
+}
+
+.credits-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 0 0 20px 20px;
+    border: 2px solid #030709;
+    text-transform: uppercase;
+}
+
+/* Projects Section End */
+
+/* FAQ Section Styling */
+
+.faq-overlay {
+    position: relative;
+    min-height: 300px;
+    text-align: center;
+}
+
+.faq-girl {
+    width: 20%
+}
+
+.faq-cloud {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 40%;
+    left: 31%;
+}
+
+.faqs h2 {
+    text-align: center;
+}
+
+.faqs-headings::after {
+    content: "+";
+    position: absolute;
+    right: 2%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faqs-headings.ui-accordion-header-active::after {
+    content: "-";
+    font-size: 30px;
+}
+
+.faqs-headings {
+    text-transform: capitalize;
+    margin-top: 60px;
+    position: relative;
+    cursor: pointer;
+    padding: 0 50px 0 20px;
+    font-family: "Montserrat";
+}
+
+.faq-card p {
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+/* FAQ Section End */
+
+/* Footer Styling */
+.footer img {
+    width: 100%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    header h2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 924px) {
+    .credits-card {
+        width: 26%;
+    }
+}
+
+@media screen and (max-width: 857px) {
+    .blue-brush {
+        background-size: contain;
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 730px) {
+
+    .credits-card {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 726px) {
+    .credits-overlay {
+        font-size: 1.2rem;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .projects h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 708px) {
+    .faq-girl {
+        width: 26%;
+    }
+}
+
+
+
+@media screen and (max-width: 428px) {
+
+    .hero h1 {
+        padding-top: 10px;
+        font-size: 2rem;
+        -webkit-text-stroke: 0;
+    }
+
+    .content-section {
+        padding-top: 20px;
+    }
+
+    .hero-span {
+        margin: 0;
+    }
+
+    .blue-brush {
+        background-size: contain;
+        font-size: 1.2rem;
+    }
+
+    .layer-text p {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+
+    .credits-card {
+        width: 34%;
+    }
+
+    .credits-overlay {
+        font-size: 1rem;
+    }
+
+    .faq-girl {
+        width: 33%;
+    }
+
+    .faq-cloud {
+        width: 47%;
+        left: 27%;
+    }
+}
