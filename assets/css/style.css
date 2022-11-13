@@ -9,8 +9,7 @@
 body {
     background-image: url("../images/body-bg.png");
     font-family: cursive;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Global Styles */
@@ -104,7 +103,7 @@ header img {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 110px 30px 0 30px;
+    padding: 44px 30px 0 30px;
 }
 
 .layer-img {
@@ -153,13 +152,13 @@ header img {
     gap: 1.5rem;
 }
 
-.credits-card {
+.projects-card {
     position: relative;
     width: 21%;
 
 }
 
-.credits-card img {
+.projects-card img {
     width: 100%;
     border: 2px solid #030709;
     border-radius: 10%;
@@ -207,6 +206,7 @@ header img {
     content: "+";
     position: absolute;
     right: 2%;
+    top: 0;
     width: 30px;
     height: 30px;
     display: flex;
@@ -221,16 +221,17 @@ header img {
 
 .faqs-headings {
     text-transform: capitalize;
-    margin-top: 60px;
     position: relative;
     cursor: pointer;
+    margin-top: 60px;
     padding: 0 50px 0 20px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
 }
 
 .faq-card p {
-    margin-top: 30px;
-    padding: 0 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    padding: 30px 20px 0 20px;
 }
 
 /* FAQ Section End */
@@ -248,35 +249,62 @@ header img {
     header h2 {
         display: none;
     }
+
+    body {
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width: 924px) {
-    .credits-card {
+
+    .projects-card {
         width: 26%;
     }
 }
 
-@media screen and (max-width: 857px) {
+@media screen and (max-width: 858px) {
     .blue-brush {
         background-size: contain;
         font-size: 1.5rem;
     }
 
+    .secondary-headings {
+        -webkit-text-stroke: 0;
+        color: #030709;
+    }
+
     .hero h1 {
+        -webkit-text-stroke: 0;
         font-size: 5rem;
+        margin-bottom: 110px;
     }
 }
 
-@media screen and (max-width: 730px) {
-
-    .credits-card {
-        width: 32%;
-    }
-}
 
 @media screen and (max-width: 726px) {
     .credits-overlay {
         font-size: 1.2rem;
+    }
+
+    .content-section-2 {
+        flex-direction: column-reverse;
+    }
+
+    .content-section {
+        flex-wrap: wrap;
+    }
+
+    .content-section-2 .layer-img {
+        width: 60%;
+    }
+
+    .layer-img {
+        width: 80%;
+    }
+
+    .layer-text {
+        margin-top: 30px;
+        width: 80%;
     }
 
     .hero h1 {
@@ -292,6 +320,8 @@ header img {
     .faq-girl {
         width: 26%;
     }
+
+
 }
 
 
@@ -301,7 +331,6 @@ header img {
     .hero h1 {
         padding-top: 10px;
         font-size: 2rem;
-        -webkit-text-stroke: 0;
     }
 
     .content-section {
@@ -313,7 +342,6 @@ header img {
     }
 
     .blue-brush {
-        background-size: contain;
         font-size: 1.2rem;
     }
 
@@ -322,12 +350,20 @@ header img {
         line-height: 1.2;
     }
 
-    .credits-card {
-        width: 34%;
+    .projects h2 {
+        padding: 0 53px;
+    }
+
+    .credits {
+        flex-wrap: wrap;
+    }
+
+    .projects-card {
+        width: 55%;
     }
 
     .credits-overlay {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .faq-girl {
