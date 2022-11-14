@@ -94,10 +94,11 @@ header img {
 
 .hero-span {
     display: block;
-    color: #67DFE3;
     -webkit-text-stroke: 0.2px black;
     font-family: 'Shadow' , sans-serif;
     margin-top: -7px;
+    color: black;
+    text-shadow: 2px 2px #67DFE3;
 }
 .content-section {
     overflow-x: hidden;
