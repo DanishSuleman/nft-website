@@ -7,16 +7,16 @@
 }
 
 body {
-    background-image: url("../images/body-bg.png");
-    font-family: cursive;
+    background-image: url("../images/body-bg.jpg");
+    font-family: 'Shadow', cursive;
     background-size: contain;
+    font-weight: 100;
 }
 
 /* Global Styles */
 
 .secondary-headings {
-    -webkit-text-stroke: 2px black;
-    color: #fff;
+    text-shadow: 2px 1px 2px white;
     text-transform: uppercase;
     font-size: 2rem;
 }
@@ -52,25 +52,24 @@ header img {
 }
 
 .nav-items h2 {
+    font-weight: 100;
     position: absolute;
-    right: -27px;
+    right: -15px;
     padding: 5px 5px 0 30px;
-    top: 6px;
+    top: 10px;
     background: #fff;
     z-index: 1;
     border-radius: 10%;
     border: 2px solid black;
-    color: #fff;
-    -webkit-text-stroke: 1.5px black;
+    color: #000;
 }
 
 .twitter h2 {
-    top: 10px;
-    right: -30px;
+    top: 15px;
 }
 
-.medium h2 {
-    right: -34px;
+.medium h2{
+    right: -21px;
 }
 
 /* Header Styling End */
@@ -89,15 +88,17 @@ header img {
     font-size: 5rem;
     text-align: center;
     color: #D81F4E;
-    -webkit-text-stroke: 4px black;
+    font-family: "Montserrat" , cursive;
+    margin-bottom: 80px;
 }
 
 .hero-span {
     display: block;
     color: #67DFE3;
-    margin-top: -40px;
+    -webkit-text-stroke: 0.2px black;
+    font-family: 'Shadow' , sans-serif;
+    margin-top: -7px;
 }
-
 .content-section {
     overflow-x: hidden;
     display: flex;
@@ -164,7 +165,7 @@ header img {
     border-radius: 10%;
 }
 
-.credits-overlay {
+.projects .credits .credits-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -174,6 +175,7 @@ header img {
     border-radius: 0 0 20px 20px;
     border: 2px solid #030709;
     text-transform: uppercase;
+    font-family: "born_rounded_demoregular";
 }
 
 /* Projects Section End */
@@ -237,10 +239,12 @@ header img {
 /* FAQ Section End */
 
 /* Footer Styling */
+
+.footer{
+    width: 100%;
+}
 .footer img {
     width: 100%;
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
 }
 
 
@@ -264,7 +268,7 @@ header img {
 
 @media screen and (max-width: 858px) {
     .blue-brush {
-        background-size: contain;
+        background-image: none;
         font-size: 1.5rem;
     }
 
@@ -274,9 +278,8 @@ header img {
     }
 
     .hero h1 {
-        -webkit-text-stroke: 0;
         font-size: 5rem;
-        margin-bottom: 110px;
+        margin-bottom: 50px;
     }
 }
 
@@ -320,17 +323,14 @@ header img {
     .faq-girl {
         width: 26%;
     }
-
-
 }
-
 
 
 @media screen and (max-width: 428px) {
 
     .hero h1 {
-        padding-top: 10px;
-        font-size: 2rem;
+        padding-top: 30px;
+        font-size: 3rem;
     }
 
     .content-section {
